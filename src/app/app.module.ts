@@ -15,10 +15,10 @@ import { GradesComponent } from './components/grades/grades.component';
 import { CurriculumComponent } from './components/curriculum/curriculum.component';
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { ResResetComponent } from './components/password/res-reset/res-reset.component';
-
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import{ FormsModule } from '@angular/forms';
 //Font awesome import
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,8 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
