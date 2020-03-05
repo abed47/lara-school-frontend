@@ -16,6 +16,9 @@ import { CurriculumComponent } from './components/curriculum/curriculum.componen
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { ResResetComponent } from './components/password/res-reset/res-reset.component';
 
+//Font awesome import
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,11 +33,12 @@ import { ResResetComponent } from './components/password/res-reset/res-reset.com
     GradesComponent,
     CurriculumComponent,
     RequestResetComponent,
-    ResResetComponent
+    ResResetComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
