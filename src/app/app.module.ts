@@ -18,6 +18,7 @@ import { ResResetComponent } from './components/password/res-reset/res-reset.com
 
 //Font awesome import
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CurriculumComponent,
     RequestResetComponent,
     ResResetComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
