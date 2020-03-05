@@ -17,6 +17,7 @@ import { RequestResetComponent } from './components/password/request-reset/reque
 import { ResResetComponent } from './components/password/res-reset/res-reset.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import{ FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 //Font awesome import
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -42,7 +43,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
