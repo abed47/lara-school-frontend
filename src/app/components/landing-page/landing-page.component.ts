@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-
+import { LoginService } from './../../services/login.service';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -10,7 +10,7 @@ export class LandingPageComponent implements OnInit {
 
   public loginForm;
 
-  constructor(private formBuilder:FormBuilder) {
+  constructor(private formBuilder:FormBuilder,private loginApi:LoginService) {
     this.loginForm = this.formBuilder.group({
       fileId:null,
       password:null,
@@ -19,7 +19,7 @@ export class LandingPageComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log(this.loginForm);
+    this.loginApi.login(this.loginForm);
   }
   ngOnInit(): void {
   }
